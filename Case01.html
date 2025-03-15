@@ -3,10 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <title>Case 01</title>
+    <link rel="stylesheet" href="Assets/lib/fontawesome/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="/Assets/lib/normalize.css">
+
+    <style>
+
+        nav {
+            position: absolute;
+            height: fit-content;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+        }
+
+        nav > div {
+            background: purple;
+            display: flex;
+            justify-content: space-between;
+
+            width: 200px;
+            padding: 15px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            margin-left: -170px;
+
+            transition-duration: 1s;
+        }
+
+        nav > div:hover {
+            margin-left: 0px;
+        }
+
+
+    </style>
+
 </head>
 <body>
 
+        <nav>
+            <div>
+                <a href="#">Menu One</a>
+                <i class="fa-solid fa-house"></i>
+            </div>
 
+            <div>
+                <a href="#">Menu Two</a>
+                <i class="fa-solid fa-address-book"></i>
+            </div>
+
+            <div>
+                <a href="#">Menu Three</a>
+                <i class="fa-solid fa-layer-group"></i>
+            </div>
+
+            <div>
+                <a href="#">Menu Four</a>
+                <i class="fa-solid fa-truck"></i>
+            </div>
+        </nav>
 
 </body>
 </html>

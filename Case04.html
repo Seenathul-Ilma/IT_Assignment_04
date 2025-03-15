@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Case 04</title>
+    <link rel="stylesheet" href="/Assets/lib/normalize.css">
+
+    <style>
+
+        div {
+            width: 20px;
+            aspect-ratio: 1/1;
+            border-radius: 50%;
+            border: 2px solid crimson;
+            position: absolute;
+            right: 0;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+
+            animation-name: my_animation_case04;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+
+        }
+
+        @keyframes my_animation_case04 {
+            from {
+                width: 0px;
+            }
+
+            to {
+                width: 250px;
+                /*border: 2px solid transparent;*/
+                opacity: 0;
+            }
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <div></div>
+
+</body>
+</html>
