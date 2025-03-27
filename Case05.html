@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Case 05</title>
+    <link rel="stylesheet" href="/Assets/lib/normalize.css">
+
+    <style>
+
+        :root {
+            --parent-div-width : 700px;
+            --parent-div-height : 400px;
+        }
+
+        .frame {
+            width: var(--parent-div-width);
+            height: var(--parent-div-height);
+            border: 2px solid black;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            display: flex;
+            overflow: hidden;
+        }
+
+        .frame div img{
+            animation-name: slider;
+            animation-duration: 8s;
+            animation-timing-function: ease;
+            animation-direction: alternate-reverse;
+            animation-iteration-count: infinite;
+
+        }
+
+        @keyframes slider {
+
+            0%{
+                transform: translateX(-300%);
+            }
+            20%{
+                transform: translateX(-300%);
+            }
+            25%{
+                transform: translateX(-200%);
+            }
+            45% {
+                transform: translateX(-200%);
+            }
+            50% {
+                transform: translateX(-100%);
+            }
+            70% {
+                transform: translateX(-100%);
+            }
+            75% {
+                transform: translateX(0%);
+            }
+            100% {
+                transform: translateX(0%);
+            }
+        }
+
+
+
+    </style>
+
+</head>
+<body>
+
+    <div class="frame">
+        <div><img src="Assets/Images/slide1.jpeg" width="700px" height="400px"></div>
+        <div><img src="Assets/Images/slide2.jpeg" width="700px" height="400px"></div>
+        <div><img src="Assets/Images/slide3.jpeg" width="700px" height="400px"></div>
+        <div><img src="Assets/Images/slide4.jpeg" width="700px" height="400px"></div>
+    </div>
+
+    <div class="images"></div>
+
+</body>
+</html>
