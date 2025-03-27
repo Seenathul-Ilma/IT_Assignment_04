@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Case 03</title>
+    <link rel="stylesheet" href="/Assets/lib/normalize.css">
+
+    <style>
+
+        :root {
+            --section-width: 800px;
+            --section-height: 600px;
+            --div-width: 200px;
+            --div-height: 80px;
+        }
+
+        body > section {
+            width: var(--section-width);
+            height: var(--section-height);
+            border: 3px solid red;
+            position: relative;
+            align-self: center;
+        }
+
+        body > section > div {
+            width: var(--div-width);
+            height: var(--div-height);
+            position: absolute;
+            border-radius: 30px;
+
+            animation-name: my_animation_box;
+            animation-duration: 5s;
+            animation-timing-function: ease-in;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes my_animation_box {
+            0% {
+                background-color: red;
+                left:0;
+            }
+
+            25% {
+                background-color: yellow;
+                top: 0;
+                left: calc(var(--section-width) - var(--div-width));
+                transform: rotate(360deg);
+            }
+
+            50% {
+                background-color: green;
+                top: calc(var(--section-height) - var(--div-height));
+                left: calc(var(--section-width) - var(--div-width));
+                transform: rotate(0deg);
+            }
+
+            75% {
+                background-color: crimson;
+                left: 0;
+                top: calc(var(--section-height) - var(--div-height));
+                transform: rotate(360deg);
+            }
+
+            100% {
+                background-color: indigo;
+                left: 0;
+                top: 0;
+                transform: rotate(0deg);
+            }
+
+        }
+
+    </style>
+
+</head>
+<body>
+
+<section>
+    <div></div>
+</section>
+
+</body>
+</html>
